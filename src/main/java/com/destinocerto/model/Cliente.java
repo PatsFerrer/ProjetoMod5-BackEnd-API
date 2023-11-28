@@ -39,6 +39,13 @@ public class Cliente {
 	@DateTimeFormat(iso = ISO.DATE, pattern = "dd/MM/yyyy")
 	private LocalDate dataNascimento;
 	
+//	@OneToMany(mappedBy = "cliente")
+//	private List<Destino> destinos;
+//	
+//	public List<Destino> getDestino(){
+//		return this.destinos;
+//	}
+	
 	public Cliente() {
 	}
 
