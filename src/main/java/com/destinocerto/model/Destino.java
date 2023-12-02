@@ -4,8 +4,6 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
@@ -20,20 +18,21 @@ public class Destino {
 	private String descricao;
 	private String imagem;
 	
-	@ManyToOne
-	@JoinColumn(name="cliente_id", nullable = false)
-	private Cliente cliente;
+//	@ManyToOne
+//	@JoinColumn(name="cliente_id", nullable = false)
+//	private Cliente cliente;
 
-	public Destino(long id, String nome, float valor, String descricao, String imagem, Cliente cliente) {
+	public Destino(long id, String nome, float valor, String descricao, String imagem) {
+		super();
 		this.id = id;
 		this.nome = nome;
 		this.valor = valor;
 		this.descricao = descricao;
 		this.imagem = imagem;
-		this.cliente = cliente;
 	}
 
 	public Destino() {
+		super();
 	}
 
 	public long getId() {
@@ -75,13 +74,5 @@ public class Destino {
 	public void setImagem(String imagem) {
 		this.imagem = imagem;
 	}
-
-	public Cliente getCliente() {
-		return cliente;
-	}
-
-	public void setCliente(Cliente cliente) {
-		this.cliente = cliente;
-	}
-
+	
 }
