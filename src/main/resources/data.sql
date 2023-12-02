@@ -60,3 +60,15 @@ VALUES ('Imperatriz',
 '422',
 'Imperatriz é uma cidade acolhedora no estado do Maranhão, Brasil. Destaca-se por sua rica cultura, festivais animados, culinária típica, parques arborizados e proximidade com belezas naturais como rios e cachoeiras.', 
 'https://patsferrer.github.io/recode-projeto/site/src/imagens/imperatriz.jpg');
+
+INSERT INTO contato(nome, email, mensagem)
+VALUES ('Juquinha de Assis',
+'juca@com',  
+'Gostaria de saber sobre minha viagem!'
+);
+
+INSERT INTO contato(nome, email, mensagem)
+VALUES ('Théo José',
+'josel@com',  
+'Como eu posso comprar uma viagem para Fernando de Noronha?'
+);
