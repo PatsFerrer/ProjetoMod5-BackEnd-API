@@ -24,7 +24,7 @@ public class Reserva {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 	
-	@Column( name = "data_hora")
+	@Column( name = "data_hora", nullable = false)
 	@DateTimeFormat(iso = ISO.DATE_TIME)
 	@JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm")
 	private Date data;
