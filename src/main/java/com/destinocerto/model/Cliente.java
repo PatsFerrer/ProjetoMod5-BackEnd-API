@@ -1,15 +1,19 @@
 package com.destinocerto.model;
 
 import java.time.LocalDate;
+import java.util.List;
 
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.format.annotation.DateTimeFormat.ISO;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 @Entity
@@ -39,11 +43,15 @@ public class Cliente {
 	@DateTimeFormat(iso = ISO.DATE, pattern = "dd/MM/yyyy")
 	private LocalDate dataNascimento;
 	
-//	@OneToMany(mappedBy = "cliente")
-//	private List<Destino> destinos;
+//	@OneToMany(mappedBy = "cliente", fetch = FetchType.LAZY, cascade = CascadeType.ALL )
+//	private List<Reserva> reservas;
 //	
-//	public List<Destino> getDestino(){
-//		return this.destinos;
+//	public List<Reserva> getReservas(){
+//		return reservas;
+//	}
+//	
+//	public void setReservas(List<Reserva> reservas) {
+//		this.reservas = reservas;
 //	}
 	
 	public Cliente() {
