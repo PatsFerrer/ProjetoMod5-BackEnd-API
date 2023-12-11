@@ -11,7 +11,8 @@ INSERT INTO cliente(nome, email, senha, cpf, telefone, data_nascimento)
 VALUES ('Steve Rogers','cap.america@gmail.com', '789', '967.257.146-23', '9 8945-3576', '1914-11-15');
 
 INSERT INTO destino(nome, valor, descricao, imagem)
-VALUES ('Recife','256', 'Encantadora cidade costeira no nordeste do Brasil, oferecendo praias deslumbrantes, rica herança colonial, cultura diversificada, música animada e uma cena gastronômica deliciosa.', 
+VALUES ('Recife','256', 
+'Encantadora cidade costeira no nordeste do Brasil, oferecendo praias deslumbrantes, rica herança colonial, cultura diversificada, música animada e uma cena gastronômica deliciosa.', 
 'https://a.cdn-hotels.com/gdcs/production165/d295/de825d07-0f3f-41e6-b41b-031791c6d729.jpg');
 
 INSERT INTO destino(nome, valor, descricao, imagem)
@@ -48,19 +49,19 @@ INSERT INTO destino(nome, valor, descricao, imagem)
 VALUES ('Jericoacoara',
 '459',
 'Jericoacoara é um paraíso escondido no nordeste do Brasil, com dunas imponentes, praias intocadas e lagoas de águas cristalinas. Um destino paradisíaco para os amantes de natureza, esportes aquáticos e tranquilidade.', 
-'https://patsferrer.github.io/recode-projeto/site/src/imagens/jericoacoara.jpg');
+'https://blogmaladeviagem.com.br/wp-content/uploads/2023/05/jericoacoara.jpg');
 
 INSERT INTO destino(nome, valor, descricao, imagem)
 VALUES ('Alagoas',
 '396',
 'Alagoas é um estado encantador no nordeste do Brasil, conhecido por suas praias deslumbrantes de águas mornas e coqueirais, recifes de corais, gastronomia rica e cultura folclórica cativante. Um destino tropical imperdível.', 
-'https://jpimg.com.br/uploads/2023/09/maceio-e-sul-de-alagoas-conheca-os-principais-pontos-turisticos.jpg');
+'https://imagens.portalzuk.com.br/blog/625/63350ed3d3a1e.jpg');
 
 INSERT INTO destino(nome, valor, descricao, imagem)
 VALUES ('Imperatriz',
 '422',
 'Imperatriz é uma cidade acolhedora no estado do Maranhão, Brasil. Destaca-se por sua rica cultura, festivais animados, culinária típica, parques arborizados e proximidade com belezas naturais como rios e cachoeiras.', 
-'https://patsferrer.github.io/recode-projeto/site/src/imagens/imperatriz.jpg');
+'https://blog.123milhas.com/wp-content/uploads/2023/01/onde-se-hospedar-em-imperatriz-hoteis-e-pousadas-conexao123-2.jpg');
 
 INSERT INTO contato(nome, email, mensagem)
 VALUES ('Juquinha de Assis',
