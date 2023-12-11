@@ -5,6 +5,8 @@ import java.time.LocalDate;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.format.annotation.DateTimeFormat.ISO;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -37,13 +39,18 @@ public class Cliente {
 	
 	@Column(nullable = false, name = "data_nascimento")
 	@DateTimeFormat(iso = ISO.DATE, pattern = "dd/MM/yyyy")
+	@JsonFormat(pattern = "yyyy-MM-dd")
 	private LocalDate dataNascimento;
 	
-//	@OneToMany(mappedBy = "cliente")
-//	private List<Destino> destinos;
+//	@OneToMany(mappedBy = "cliente", fetch = FetchType.LAZY, cascade = CascadeType.ALL )
+//	private List<Reserva> reservas;
 //	
-//	public List<Destino> getDestino(){
-//		return this.destinos;
+//	public List<Reserva> getReservas(){
+//		return reservas;
+//	}
+//	
+//	public void setReservas(List<Reserva> reservas) {
+//		this.reservas = reservas;
 //	}
 	
 	public Cliente() {
