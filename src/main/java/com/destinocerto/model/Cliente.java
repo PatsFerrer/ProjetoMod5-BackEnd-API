@@ -41,18 +41,7 @@ public class Cliente {
 	@DateTimeFormat(iso = ISO.DATE, pattern = "dd/MM/yyyy")
 	@JsonFormat(pattern = "yyyy-MM-dd")
 	private LocalDate dataNascimento;
-	
-//	@OneToMany(mappedBy = "cliente", fetch = FetchType.LAZY, cascade = CascadeType.ALL )
-//	private List<Reserva> reservas;
-//	
-//	public List<Reserva> getReservas(){
-//		return reservas;
-//	}
-//	
-//	public void setReservas(List<Reserva> reservas) {
-//		this.reservas = reservas;
-//	}
-	
+		
 	public Cliente() {
 	}
 
