@@ -25,25 +25,21 @@ public class ClienteController {
 	@Autowired
 	public ClienteRepository clienteRepository;
 
-	// get all clients, busca no banco
 	@GetMapping
 	public List<Cliente> getAllClientes() {
 		return clienteRepository.findAll();
 	}
 
-	// get client by id Rest API
 	@GetMapping("/{id}")
 	public Cliente getClienteById(@PathVariable Long id) {
 		return clienteRepository.findById(id).get();
 	}
 
-	// create cliente Rest API
 	@PostMapping
 	public Cliente createCliente(@RequestBody Cliente cliente) {
 		return clienteRepository.save(cliente);
 	}
 
-	// update client rest api
 	@PutMapping("/{id}")
 	public Cliente updateCliente(@PathVariable Long id, @RequestBody Cliente clienteDetails) {
 		Cliente cliente = clienteRepository.findById(id).get();
@@ -58,7 +54,6 @@ public class ClienteController {
 		return clienteRepository.save(cliente);
 	}
 
-	// delete client rest api
 	@DeleteMapping("/{id}")
 	public void deleteCliente(@PathVariable Long id) {
 		clienteRepository.deleteById(id);
