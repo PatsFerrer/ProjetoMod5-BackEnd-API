@@ -1,4 +1,4 @@
-# Recode Pro Mod5 | Projeto Agência de Viagens
+# Recode | Projeto Back-End Agência de Viagens
 
 Projeto Back-End API Java que criei para o curso Recode Pro. 😁 <br>
 Projeto [Front-End](https://github.com/PatsFerrer/ProjetoMod5-FrontEnd-ReactNext) em React-Next.
