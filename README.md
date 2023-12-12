@@ -19,7 +19,7 @@ Para iniciar este projeto, foi utilizado o [spring initializr](https://start.spr
 - Project: Maven Project;
 - Language: Java 17;
 - Spring Boot: 3.1.5;
-- Dependencies: Spring Web, Spring Boot Devtools, Spring Data JPA e MySQL Driver.
+- Dependencies: Spring Web, Spring Boot Devtools, Spring Data JPA, MySQL Driver e Jackson Databind.
 
 ## Pré-requisitos
 - Alterar o arquivo `application.properties`
